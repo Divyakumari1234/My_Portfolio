@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divya Kumari - Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav__logo">Divya<span>Kumari</span></div>
+    <nav class="nav__links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__mobile-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero__content">
+        <a href="#contact" class="btn btn--hire">Hire Me</a>
+        <p class="hero__role">Frontend Developer</p>
+        <h1 class="hero__title">
+          Hi, I'm <span class="gradient-text">Divya Kumari</span>
+        </h1>
+        <p class="hero__description">
+          I’m a Computer Science graduate and Frontend Developer with hands-on experience in React, JavaScript, Tailwind CSS, and REST API integration. Strong at building reusable components, responsive layouts, and end-to-end user flows. and contributed to healthcare product features including user dashboards, authentication, and service booking.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+        <div class="hero__social">
+          <a href="https://github.com/Divyakumari1234" target="_blank" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/divya-kumari-677a152ab" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:divyapandey822123@gmail.com" aria-label="Email">Email</a>
+        </div>
+        <div class="hero__info">
+          <div class="info-item">
+            <span class="info-label">Ranchi, India</span>
+            <span class="info-status">Available for work</span>
+          </div>
+        </div>
+        <div class="hero__stats">
+          <div class="stat-item">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">8.78</span>
+            <span class="stat-label">CGPA • CS Engineering</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-wrapper">
+          <img src="assets/divya.jpeg" alt="Divya Kumari" />
+          <div class="hero__image-bg"></div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about">
+      <div class="section__header">
+        <p class="section__tag">About Me</p>
+        <h2>Get to know me</h2>
+      </div>
+      <div class="about__content">
+        <div class="about__text">
+          <p class="about__intro">
+            I'm a passionate Frontend Developer with expertise in React.js, modern web technologies, and responsive design. I hold a Bachelor's degree in Computer Science Engineering with an 8.78 CGPA.
+          </p>
+          <p>
+            With over 1+ years of hands-on experience, I'm currently working as a Frontend Developer at Dandar Pharmaceuticals Pvt Ltd, where I build responsive web UIs and create seamless user experiences. I've successfully delivered 5+ projects with a strong focus on performance, accessibility, and clean code.
+          </p>
+          <div class="about__resume">
+            <a href="https://drive.google.com/file/d/1Nh2yUcF_MqbGOfgHC9F4CZxQ1u3cn9EY/view?usp=drivesdk" target="_blank" class="btn btn--primary">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="section__header">
+        <p class="section__tag">My Skills</p>
+        <h2>Technical Expertise</h2>
+        <p class="section__subtitle">I work with cutting-edge technologies to build scalable, performant, and user-friendly applications.</p>
+      </div>
+      <div class="skills__tabs">
+        <button class="skill-tab active" data-category="frontend">Frontend</button>
+        <button class="skill-tab" data-category="backend">Backend</button>
+        <button class="skill-tab" data-category="database">Database</button>
+        <button class="skill-tab" data-category="tools">Tools</button>
+        <button class="skill-tab" data-category="libraries">Libraries</button>
+      </div>
+      <div class="skills__content">
+        <!-- Frontend Skills -->
+        <div class="skill-category active" data-category="frontend">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">⚛️</span>
+              <span class="skill-name">React.js</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🎨</span>
+              <span class="skill-name">Tailwind CSS</span>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🟨</span>
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="92"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🌐</span>
+              <span class="skill-name">HTML5 & CSS3</span>
+              <span class="skill-percentage">98%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="98"></div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- Backend Skills -->
+        <div class="skill-category" data-category="backend">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🔌</span>
+              <span class="skill-name">REST APIs</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🐍</span>
+              <span class="skill-name">Python</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">📦</span>
+              <span class="skill-name">Node.js</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="75"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Database Skills -->
+        <div class="skill-category" data-category="database">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🗄️</span>
+              <span class="skill-name">MySQL</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🍃</span>
+              <span class="skill-name">MongoDB</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tools Skills -->
+        <div class="skill-category" data-category="tools">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">💻</span>
+              <span class="skill-name">VS Code</span>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🛠️</span>
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">📓</span>
+              <span class="skill-name">Jupyter Notebook</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🐍</span>
+              <span class="skill-name">PyCharm</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Libraries Skills -->
+        <div class="skill-category" data-category="libraries">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">📊</span>
+              <span class="skill-name">NumPy</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">🐼</span>
+              <span class="skill-name">Pandas</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">📈</span>
+              <span class="skill-name">Data Visualization</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">📉</span>
+              <span class="skill-name">Matplotlib</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-icon">📊</span>
+              <span class="skill-name">Seaborn</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section experience">
+      <div class="section__header">
+        <p class="section__tag">My Journey</p>
+        <h2>Professional Experience</h2>
+        <p class="section__subtitle">My career journey showcasing growth, achievements, and the impact I've made in various roles.</p>
+      </div>
+      <div class="experience__timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Frontend Developer</h3>
+            <p class="timeline-company">Dandar Pharmaceuticals Pvt Ltd</p>
+            <p class="timeline-period">Nov 2024 – Present • Ranchi, Jharkhand</p>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>Built responsive web UIs with smooth, modern component libraries</li>
+                <li>Created medicine search, product listing, cart, and checkout flows with API integration</li>
+                <li>Collaborated with backend team to integrate REST APIs and maintain UX consistency</li>
+                <li>Focused on performance, accessibility, and clean, maintainable code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Full Stack Developer Intern</h3>
+            <p class="timeline-company">ePointer Consultancy Services Pvt Ltd</p>
+            <p class="timeline-period">Jun 2022 – Aug 2022 • Remote</p>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>Developed full‑stack modules using HTML, CSS, JavaScript, MySQL, and .NET</li>
+                <li>Designed and optimized database schemas for production features</li>
+                <li>Delivered assigned modules on time following Agile practices</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="section__header">
+        <p class="section__tag">My Work</p>
+        <h2>Featured Projects</h2>
+        <p class="section__subtitle">A showcase of my recent work demonstrating technical skills, creativity, and problem-solving abilities.</p>
+      </div>
+      <div class="projects__grid">
+        <article class="project-card featured">
+          <div class="project-header">
+            <h3>ChatGPT Clone</h3>
+            
+          </div>
+          <p class="project-description">
+            I built a ChatGPT-style chat application. The app supports real-time conversation UI, prompt submission, and response rendering by integrating an AI API securely through the backend (API key protected).
+          </p>
+          <ul class="project-features">
+            <li>Built in React with a responsive, dark‑mode chat layout</li>
+            <li>Reusable chat bubbles, sidebar, and message input components</li>
+            <li>Implemented message history, auto-scroll, typing/loading indicator, and clean UI for better UX.</li>
+          </ul>
+          <div class="project-tech">
+            <span>React js</span>
+            <span>Tailwindcss</span>
+            <span>Node js</span>
+            <span>Express js</span>
+           
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Divyakumari1234/ChatGpt_Clone.git" class="project-link">Code</a>
+            
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>ConvoApp</h3>
+          </div>
+          <p class="project-description">
+            I built a Word-to-PDF conversion web app . Users can upload Word files (.doc/.docx), the server converts them into a PDF, and the PDF is generated and returned for download. 
+          <ul class="project-features">
+            <li>The app includes validations (file type/size), error handling, and a smooth user experience.
+          </p></li>
+            <li>Fully responsive design across mobile, tablet, and desktop</li>
+            <li>Clean state management and reusable components</li>
+          </ul>
+          <div class="project-tech">
+            <span>React js</span>
+            <span>Tailwind CSS</span>
+            <span>Node js</span>
+            <span>Express js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Divyakumari1234/CONVOAPP.git" class="project-link">Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>House Price Prediction</h3>
+          </div>
+          <p class="project-description">
+            ML model to predict house prices based on features like location, size, and room count, using Python and MySQL.
+          </p>
+          <ul class="project-features">
+            <li>Data preprocessing with Pandas, NumPy, and encoding techniques</li>
+            <li>Persistent storage with MySQL for training and evaluation data</li>
+            <li>Insightful visualizations using Seaborn and Matplotlib</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+          </div>
+          
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>E‑commerce Website</h3>
+          </div>
+          <p class="project-description">
+            A fully responsive e‑commerce website with intuitive navigation, product catalog, and optimized performance.
+          </p>
+          <ul class="project-features">
+            <li>Built with HTML, CSS, and JavaScript from scratch</li>
+            <li>Clean product grid, search, and filter experiences</li>
+            <li>Cross‑browser compatibility and fast loading times</li>
+          </ul>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Divyakumari1234/E_commerce.git" class="project-link">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="section__header">
+        <p class="section__tag">Get In Touch</p>
+        <h2>Let's Work Together</h2>
+        <p class="section__subtitle">Have an exciting project in mind? Let's discuss how we can bring your ideas to life with cutting-edge technology.</p>
+      </div>
+      <div class="contact__content">
+        <div class="contact__info">
+          <h3>Contact Information</h3>
+          <p>Ready to start a conversation? Reach out through any of these channels.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:divyapandey822123@gmail.com" class="contact-value">divyapandey822123@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+916206367447" class="contact-value">+91 6206367447</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Ranchi, Jharkhand, India</span>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/divya-kumari-677a152ab" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://github.com/Divyakumari1234" target="_blank" class="social-link">GitHub</a>
+            <a href="https://drive.google.com/file/d/1Nh2yUcF_MqbGOfgHC9F4CZxQ1u3cn9EY/view?usp=drivesdk" target="_blank" class="social-link">Resume</a>
+          </div>
+        </div>
+        <form class="contact__form" onsubmit="event.preventDefault(); alert('Thank you for your message! I will get back to you within 24 hours.');">
+          <h3>Send a Message</h3>
+          <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="Your email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Divya Kumari. Crafted with <span class="heart">❤️</span> and lots of <span class="coffee">☕</span></p>
+    <div class="footer-social">
+      <a href="https://github.com/Divyakumari1234" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/divya-kumari-677a152ab" target="_blank">LinkedIn</a>
+      <a href="mailto:divyapandey822123@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
