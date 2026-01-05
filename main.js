@@ -110,8 +110,8 @@ document.querySelectorAll('.nav__links a').forEach(link => {
   });
 });
 
-// Form submission handler with loading state
-const contactForm = document.querySelector('.contact__form');
+// Form submission handler with FormSubmit
+const contactForm = document.querySelector('#contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     // Set the redirect URL after successful submission
@@ -126,6 +126,7 @@ if (contactForm) {
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
     
+    // Allow form to submit normally to FormSubmit
     // Reset button state after delay (in case submission fails)
     setTimeout(() => {
       submitButton.textContent = originalText;
