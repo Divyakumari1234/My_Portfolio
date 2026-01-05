@@ -110,16 +110,39 @@ document.querySelectorAll('.nav__links a').forEach(link => {
   });
 });
 
-// Form submission handler
+// Form submission handler with loading state
 const contactForm = document.querySelector('.contact__form');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // You can add form submission logic here
-    alert('Thank you for your message! I will get back to you within 24 hours.');
-    contactForm.reset();
+  contactForm.addEventListener('submit', function(e) {
+    // Set the redirect URL after successful submission
+    const nextInput = this.querySelector('input[name="_next"]');
+    if (nextInput && !nextInput.value) {
+      nextInput.value = window.location.href.split('?')[0] + '?success=true';
+    }
+    
+    // Show loading state
+    const submitButton = this.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+    
+    // Reset button state after delay (in case submission fails)
+    setTimeout(() => {
+      submitButton.textContent = originalText;
+      submitButton.disabled = false;
+    }, 10000);
   });
 }
+
+// Show success message if redirected back from FormSubmit
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('success') === 'true') {
+    alert('Thank you for your message! I will get back to you within 24 hours.');
+    // Clean URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+});
 
 // Add scroll progress indicator
 const scrollProgress = () => {
